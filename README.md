@@ -1,6 +1,6 @@
 # Web Push Notification
 
-A Simple Static Site with Web Auth Built Using Firebase for Web Push Notification.
+A Simple Static Site with Web Auth Build Using Firebase for Web Push Notification.
 
 ## Requirements
 
