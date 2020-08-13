@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="/assets/icons/Icon-48.png"/>
+
+<title>Free Push Updates</title>
+<meta name="description" content="Get Free Browser Push Notification Updates." />
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="San Push">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+<meta name="apple-mobile-web-app-title" content="San Push">
+
+<link rel="apple-touch-icon" sizes="48x48" href="/assets/icons/Icon-48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/Icon-72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="/assets/icons/Icon-96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/Icon-144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/Icon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/assets/icons/Icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/Icon-512.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+
+<style>
+.hide {
+display: none;
+}
+</style>
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//www.gstatic.com">
+
+<link rel="manifest" href="/manifest.json">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+</head>
+<body>
+
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-half">
+
+<div class="author-box-avatar">
+<img id="userimage">
+</div>
+<div class="author-box-description">
+<p><div id="name"></div>Subscribe to Our Free Push Notification Updates - it's 💯 Free.</p>
+<br>
+<p class="control">
+<button id="btnLogOut" class="hide button is-warning read-more" >🙈 Log Out</button>
+</p>
+</div>
+
+<hr>
+
+<h3 class="is-size-6">Free Push Notification Update</h3>
+<br>
+<div class="apps">
+<div id="tokens"></div>
+<div class="notices"></div>
+<p class="control">
+<button id="getpush" class="hide button is-info read-more">⚛ Subscribe</button>
+</p>
+</div>
+
+<hr>
+
+<div class="hero home-header">
+<div class="hero-body card-content login">
+<h2>Your Account Status</h2><br>
+<div class="table-holder" style="overflow-x:auto;">
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Your Email</th>
+<td><div id="useremail"></div></td>
+</tr>
+<tr>
+<th>Account Status</th>
+<td><div id="status"></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<h3 class="title is-5">Delete My Account</h3>
+<p class="control">
+<button id="btndelete" class="button read-more is-danger">🌪 Delete Account</button>
+</p>
+<div id="acrmv"></div>
+<br>
+<p>Once Delete your Account all your Sign-in Records and Your Push Token will be Deleted from our Database.</p>
+<p>Relogin to Create a Account and Get Free Push Updates.</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="content has-text-centered">
+<p class="content has-text-centered">
+<strong>🔮 Crafted</strong> by <a href="https://www.facebook.com/santhoshveercom" target="_blank" rel="nofollow noopener">Santhosh Veer</a> - Built on Firebase Authentication - Hosted at Netlify.
+</p>
+</div>
+</footer>
+
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/account.js"></script>
+<script src="/assets/js/delete.js"></script>
+<script src="/assets/js/notification.js"></script>
+
+</body>
+</html>

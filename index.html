@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="/assets/icons/Icon-48.png"/>
+
+<title>Free Push Updates</title>
+<meta name="description" content="Get Free Browser Push Notification Updates." />
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="San Push">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+<meta name="apple-mobile-web-app-title" content="San Push">
+
+<link rel="apple-touch-icon" sizes="48x48" href="/assets/icons/Icon-48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/Icon-72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="/assets/icons/Icon-96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/Icon-144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/Icon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/assets/icons/Icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/Icon-512.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+
+<style>
+.hide{
+display: none;
+}
+</style>
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//www.gstatic.com">
+
+<link rel="manifest" href="/manifest.json">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-messaging.js"></script>
+
+</head>
+<body>
+
+<section class="section">
+<div class="container content">
+<div class="columns is-centered">
+<div class="column is-half">
+<p class="control">
+Hello Welcome 😊 Please <b>Sign in</b> to Subscribe 🔔 <br> for Free Push Notification Updates.<br>
+<br>
+<small><b>Sign-in Verification for Spam Protection 🛡</b></small>
+</p>
+<br>
+<div class="card-content content user-form login">
+<p class="control">
+<button id="btnLogin" class="button read-more">
+<img width="20px" style="margin-bottom:1px; margin-right:5px" alt="Google sign-in" src="/assets/images/gbtn.png" />
+LOGIN With Google
+</button>
+</p>
+<div id="results"></div>
+</div>
+<br>
+<blockquote class="notification is-warning">
+<div class="tags has-addons is-horizontal-center">
+<span class="tag is-link">ZERO</span>
+<span class="tag is-success">Logs</span>
+</div>
+<strong>
+<small>Your Sign-in Data's are Securly Stored in our Database - Anytime you can Delete your Account and Data.</small><br>
+<small>We Collect your Account Profile Data and Browser Push Notification Token in our Database - We Never Logged or Stored your Sensitive Data in our Server and Database.</small>
+</strong>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="content has-text-centered">
+<p class="content has-text-centered">
+<strong>🔮 Crafted</strong> by <a href="https://www.facebook.com/santhoshveercom" target="_blank" rel="nofollow noopener">Santhosh Veer</a> - Built on Firebase Authentication - Hosted at Netlify.
+</p>
+</div>
+</footer>
+
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/auth.js"></script>
+
+</body>
+</html>
