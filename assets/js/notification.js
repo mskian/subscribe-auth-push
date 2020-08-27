@@ -10,7 +10,8 @@ if (Notification.permission !== "granted") {
             if (document.getElementById("tokens") != null) {
                 console.log(token);
                 appsNotices.empty();
-                appsNotices.append('<pre>your Free Push Token : ' + token + ' </pre>');
+                appsNotices.append('<p>Thanks for Subscribe 💌</p>');
+                appsNotices.append('<p><pre>your Free Push Token : ' + token + ' </pre></p>');
                 document.getElementById("getpush").classList.add('hide');
 
                 firebase.auth().onAuthStateChanged(function(user) {
@@ -23,6 +24,7 @@ if (Notification.permission !== "granted") {
                         }
                         var userstoken = {
                             uid: user.uid,
+                            from: user.displayName,
                             usertoken: token,
                         }
                         GetUsertoken(userstoken)

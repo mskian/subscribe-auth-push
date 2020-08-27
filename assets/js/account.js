@@ -3,7 +3,7 @@ const auth = firebase.auth();
 firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
     if (user) {
-        console.log(user);
+        //console.log(user);
         if (document.getElementById("useremail") != null) {
             document.getElementById("useremail").innerHTML = '<p>' + user.email + '</p>';
             console.log(user.uid);
@@ -24,7 +24,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 uid: user.uid,
                 name: user.displayName,
                 email: user.email,
-                profileimage: user.photoURL,
+                //profileimage: user.photoURL,
                 verified: user.emailVerified
             }
             writeUserData(users)
